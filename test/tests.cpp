@@ -19,7 +19,7 @@ TEST_CASE( "pdep_c", "[pdep:c]" ) {
     ap_uint<64> val  = 0x0000000000000200;  
     ap_uint<64> mask = 0x51aff40c39426f8c;  
     ap_uint<64> expected_result =  0x0000000000020000;  
-    REQUIRE(pdep(val, mask) == expected_result);
+    REQUIRE(pdep_u64_arm(val, mask) == expected_result);
     
 }
 
